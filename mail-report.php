@@ -168,7 +168,7 @@ class MailReportPlugin
       'post_title'     => $subject . ' - ' . date('H:i:s j-m-Y'),
       'post_content'   => $message,
       'post_type'      => self::$post_type
-    ), $wp_error);
+    ), $wp_error = false);
 
     if ($wp_error)
       return false;
